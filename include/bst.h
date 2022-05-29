@@ -3,20 +3,20 @@
 #define INCLUDE_BST_H_
 template <typename T>
 class BST {
-   public:
-  struct Node {
-    T value;
-    int count;
-    Node* left;
-    Node* right;
-        };
-   private:
-  Node* root;
-  Node* addNode(Node*, T);
-  int depthTree(Node*);
-  int searchNode(Node*, T);
-   public:
-  BST();
+    public:
+   struct Node {
+      T value;
+      int count;
+      Node* left;
+      Node* right;
+   };
+    private:
+   Node* root;
+   Node* addNode(Node*, T);
+   int depthTree(Node*);
+   int searchNode(Node*, T);
+    public:
+   BST();
   ~BST();
   void add(T);
   int depth();
