@@ -2,20 +2,20 @@
 #ifndef INCLUDE_BST_H_
 #define INCLUDE_BST_H_
 template <typename T>
-  class BST {
-   public:
-	struct Node {
+class BST {
+         public:
+        struct Node {
     T value;
     int count;
     Node* left;
     Node* right;
-  };
-  private:
+        };
+         private:
   Node* root;
   Node* addNode(Node*, T);
   int depthTree(Node*);
   int searchNode(Node*, T);
-  public:
+   public:
   BST();
   ~BST();
   void add(T);
